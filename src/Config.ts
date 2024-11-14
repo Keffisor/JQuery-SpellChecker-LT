@@ -2,6 +2,7 @@ export class Config {
     public static BASE_ENDPOINT_URL: string = 'https://api.languagetool.org/v2/check'
     public static REQUEST_COOLDOWN: number = 6.2;
     public static LANGUAGE: string = 'auto';
+    public static USERNAME: string | null= null;
     public static API_KEY: string | null = null;
 
     public static updateConfig(config: Record<string, any>) {
@@ -17,6 +18,10 @@ export class Config {
                 }
                 case 'language': {
                     this.LANGUAGE = value;
+                    break;
+                }
+                case 'username': {
+                    this.USERNAME = value;
                     break;
                 }
                 case 'api_key': {

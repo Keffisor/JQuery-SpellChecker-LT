@@ -17,6 +17,7 @@ export class SpellCheckerAPI {
             }
         };
 
+        if(Config.USERNAME != null) settings['data']['username'] = Config.USERNAME;
         if(Config.API_KEY != null) settings['data']['apiKey'] = Config.API_KEY;
 
         let response = await new Promise((resolve, reject) => {

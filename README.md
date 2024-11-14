@@ -1,4 +1,4 @@
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/Keffisor/JDAExpansion)](https://github.com/Keffisor/JDAExpansion/commits/master)
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/Keffisor/jquery-spellchecker-lt)](https://github.com/Keffisor/jquery-spellchecker-lt/commits/master)
 <br>
 # jQuery-SpellChecker-LT
 **jQuery-SpellChecker-LT** - Add a SpellChecker integration to any editor using LanguageTool's API.
@@ -31,3 +31,5 @@ $('#documentEditor').spellchecker({
 - ```endpoint_url```: The URL where will connect to retrieve the spell check. This is ideal for set a custom languagetool server endpoint.
 - ```request_cooldown```: Change the wait time when the user start's typing to connect into the endpoint.
 - ```language```: Change the language of the spellchecker (default is "auto").
+- ```username```: Your username/email as used to log in at languagetool.org for Premium API access.
+- ```api_key```: Set to get Premium API access.
